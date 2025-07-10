@@ -14,18 +14,18 @@ public class TodoRequest {
    @NotNull private  String body;
    @Null private Integer userId;
    @NotNull private String status;
-   @NotNull private LocalDate created_at;
+   @NotNull private LocalDate createdAt;
 
     public TodoRequest() {
     }
 
-    public TodoRequest(Integer id, String title, String body, Integer user_id, String status, LocalDate created_at) {
+    public TodoRequest(Integer id, String title, String body, Integer user_id, String status, LocalDate createdAt) {
         this.id = id;
         this.title = title;
         this.body = body;
         this.userId = userId;
         this.status = status;
-        this.created_at = created_at;
+        this.createdAt = createdAt;
     }
 
     public Integer getId() {
@@ -68,11 +68,11 @@ public class TodoRequest {
         this.status = status;
     }
 
-    public LocalDate getCreated_at() {
-        return created_at;
+    public LocalDate getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreated_at(LocalDate created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(LocalDate createdAt) {
+        this.createdAt = createdAt;
     }
 }

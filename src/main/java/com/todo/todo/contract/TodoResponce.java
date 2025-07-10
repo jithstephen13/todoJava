@@ -11,18 +11,18 @@ public class TodoResponce {
     private  String body;
     private Integer userId;
      private String status;
-    private LocalDate created_at;
+    private LocalDate createdAt;
 
     public TodoResponce() {
     }
 
-    public TodoResponce(Integer id, String title, String body, Integer userId, String status, LocalDate created_at) {
+    public TodoResponce(Integer id, String title, String body, Integer userId, String status, LocalDate createdAt) {
         this.id = id;
         this.title = title;
         this.body = body;
         this.userId = userId;
         this.status = status;
-        this.created_at = created_at;
+        this.createdAt = createdAt;
     }
 
     public Integer getId() {
@@ -65,11 +65,11 @@ public class TodoResponce {
         this.status = status;
     }
 
-    public LocalDate getCreated_at() {
-        return created_at;
+    public LocalDate getCreatedAt() {
+        return createdAt;
     }
 
-    public void setCreated_at(LocalDate created_at) {
-        this.created_at = created_at;
+    public void setCreatedAt(LocalDate createdAt) {
+        this.createdAt = createdAt;
     }
 }

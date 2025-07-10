@@ -38,7 +38,7 @@ public class TodoServiceImplementation implements TodoService {
         todo.setTitle(request.getTitle());
         todo.setBody(request.getBody());
         todo.setStatus(request.getStatus());
-        todo.setCreated_at(request.getCreated_at());
+        todo.setCreatedAt(request.getCreatedAt());
         todo.setUser(user); // set the User (foreign key)
         // Save the todo
         TodoItem savedTodo = todoRepository.save(todo);
@@ -47,7 +47,7 @@ public class TodoServiceImplementation implements TodoService {
         response.setId(savedTodo.getId());
         response.setTitle(savedTodo.getTitle());
         response.setStatus(savedTodo.getStatus());
-        response.setCreated_at(savedTodo.getCreated_at());
+        response.setCreatedAt(savedTodo.getCreatedAt());
 
         return response;
     }
@@ -84,7 +84,7 @@ public class TodoServiceImplementation implements TodoService {
         existing.setTitle(request.getTitle());
         existing.setBody(request.getBody());
         existing.setStatus(request.getStatus());
-        existing.setCreated_at(request.getCreated_at());
+        existing.setCreatedAt(request.getCreatedAt());
 
         TodoItem updatedTodo = todoRepository.save(existing);
 
@@ -94,7 +94,7 @@ public class TodoServiceImplementation implements TodoService {
         response.setTitle(updatedTodo.getTitle());
         response.setBody(updatedTodo.getBody());
         response.setStatus(updatedTodo.getStatus());
-        response.setCreated_at(updatedTodo.getCreated_at());
+        response.setCreatedAt(updatedTodo.getCreatedAt());
 
         return response;
 
